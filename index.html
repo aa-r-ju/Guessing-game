@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+    <link
+      rel="shortcut icon"
+      href="/assest/website_icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Candal&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./js/guessing-game.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 id="title-msg">MY GUESSING GAME </h1>
+      <h3 id="guess-msg">Guess a number from 1 to 100</h3>
+      <input
+        type="number"
+        value=""
+        placeholder="TYPE GUESS HERE"
+        id="num-input"
+        autofocus
+      />
+      <button id="submit-btn"> Go! </button>
+
+      <ul id="list-items">
+        <li class="pass-number"></li>
+        <li class="pass-number"></li>
+        <li class="pass-number"></li>
+        <li class="pass-number"></li>
+        <li class="pass-number"></li>
+      </ul>
+      <button id="reset-btn">RESET THE GAME</button>
+      <button id="hint-btn">NEED A HINT ?</button>
+    </div>
+  </body>
+</html>

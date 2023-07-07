@@ -20,7 +20,7 @@ describe('shuffle function', () => {
   it('shuffles an array using Math.random to place elements', () => {
     //By making Math.random deterministic, we can test the output of shuffle
     spyOn(Math, 'random').and.returnValue(0.5);
-    let shuffledArray = shuffle([20, 50, 70]);
+    let shuffledArray = shuffle([20, 50, 70]);1
     expect(Math.random).toHaveBeenCalled();
     expect(shuffledArray).toEqual([20, 70, 50]);
   });
